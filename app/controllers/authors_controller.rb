@@ -6,6 +6,8 @@ class AuthorsController < ApplicationController
   def new
   end
 
+  
+  
   def create
     #@author = Author.create!(author_params)
     
@@ -18,12 +20,19 @@ class AuthorsController < ApplicationController
 
     redirect_to author_path(@author)
     
-    
+    else
+    render :new
     
     
     
     
   end
+  
+  
+  
+  
+  
+  
 
   private
 
